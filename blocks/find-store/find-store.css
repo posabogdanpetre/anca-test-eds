@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+main > div,
+main > .section,
+main > .section:first-of-type {
+  margin: 0;
+}
+main > .section > div {
+  max-width: none;
+  padding: 0;
+}
+body {
+  overflow: auto;
+}
+
+main .find-store {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 280px;
+}
+
+main .find-store .store-search-card {
+  max-width: 400px;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+}
+
+main .find-store .pin-icon {
+  width: 32px;
+  height: 32px;
+  margin: 0 auto 12px;
+  opacity: 0.7;
+}
+
+main .find-store .store-search-card h2 {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+main .find-store .store-search-card input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: #fff;
+  color: #333;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+main .find-store .store-search-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+main .find-store .store-search-card button:hover {
+  opacity: 0.85;
+}
+
+main .find-store .stores-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 580px;
+}
+
+main .find-store .store-card {
+  width: 260px;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+main .find-store .store-card .pin-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+main .find-store .store-card .store-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+main .find-store .store-card .store-address {
+  font-size: 12px;
+  opacity: 0.78;
+  margin: 0 0 8px;
+}
+
+main .find-store .store-card .store-phone {
+  font-size: 12px;
+  color: #2563eb;
+  margin: 0 0 6px;
+}
+
+main .find-store .store-card .store-hours {
+  font-size: 11px;
+  opacity: 0.65;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  main .find-store .store-search-card input {
+    background: #2a2a2a;
+    color: #fff;
+    border-color: rgba(255,255,255,0.15);
+  }
+}
+
+body.dark main .find-store .store-search-card input {
+  background: #2a2a2a;
+  color: #fff;
+  border-color: rgba(255,255,255,0.15);
+}
