@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+main > div,
+main > .section,
+main > .section:first-of-type {
+  margin: 0;
+}
+main > .section > div {
+  max-width: none;
+  padding: 0;
+}
+body {
+  overflow: auto;
+}
+
+main .get-product-details {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 280px;
+}
+
+main .get-product-details .detail-card {
+  display: flex;
+  flex-direction: row;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 600px;
+  height: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+main .get-product-details .image-container {
+  flex: 0 0 260px;
+  width: 260px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+main .get-product-details .image-container img,
+main .get-product-details .image-container .color-fallback {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+main .get-product-details .cta-btn {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  z-index: 10;
+}
+
+main .get-product-details .cta-btn:hover {
+  opacity: 0.9;
+}
+
+main .get-product-details .content {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+main .get-product-details .content h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+main .get-product-details .content .description {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  opacity: 0.78;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+main .get-product-details .content .category-chip {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.12);
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: auto;
+  width: fit-content;
+}
+
+@media (prefers-color-scheme: dark) {
+  main .get-product-details {
+    background: #111;
+  }
+}
+body.dark main .get-product-details {
+  background: #111;
+}
